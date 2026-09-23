@@ -1,82 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>You're Invited!</title>
+<html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Georgia, serif;
-            background: #fff4f5;
-            color: #5a3d42;
-            text-align: center;
-        }
+<title>For Glennise</title>
 
-        .invitation {
-            max-width: 600px;
-            margin: 60px auto;
-            padding: 50px 25px;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
+<style>
+    body {
+        margin: 0;
+        font-family: Georgia, serif;
+        background: #fff4f5;
+        color: #5a3d42;
+        text-align: center;
+    }
 
-        h1 {
-            color: #b76e79;
-            font-size: 24px;
-            letter-spacing: 3px;
-        }
+    .invitation {
+        max-width: 600px;
+        margin: 60px auto;
+        padding: 50px 25px;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
 
-        h2 {
-            font-size: 42px;
-            margin: 20px 0;
-        }
+    h1 {
+        color: #b76e79;
+        font-size: 24px;
+        letter-spacing: 3px;
+    }
 
-        .details {
-            font-size: 18px;
-            line-height: 1.8;
-            margin: 30px 0;
-        }
+    h2 {
+        font-size: 42px;
+        margin: 20px 0;
+    }
 
-        .rsvp {
-            display: inline-block;
-            padding: 12px 30px;
-            background: #b76e79;
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-        }
+    .details {
+        font-size: 18px;
+        line-height: 1.8;
+        margin: 30px 0;
+    }
 
-        .rsvp:hover {
-            background: #945762;
-        }
-    </style>
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-top: 30px;
+    }
+
+    .rsvp,
+    .maybe-button {
+        width: 220px;
+        padding: 12px 20px;
+        border: none;
+        font-family: Georgia, serif;
+        font-size: 16px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .rsvp {
+        background: #b76e79;
+        color: white;
+    }
+
+    .rsvp:hover {
+        background: #945762;
+    }
+
+    .maybe-button {
+        background: #f1dfe2;
+        color: #5a3d42;
+    }
+
+    .maybe-button:hover {
+        background: #e6c8cd;
+    }
+</style>
+
 </head>
 
 <body>
 
-    <div class="invitation">
+<div class="invitation">
 
-        <h1>YOU'RE INVITED</h1>
+    <h1>YOU'RE INVITED</h1>
 
-        <h2>Alex & Jamie</h2>
+    <h2>Watch and bebe time</h2>
 
-        <p>We would love for you to celebrate with us!</p>
+    <p>I would love for you to join me!</p>
 
-        <div class="details">
-            📅 Saturday, December 12<br>
-            🕕 6:00 PM<br>
-            📍 The Garden Venue
-        </div>
+    <div class="details">
+        📅 Wednesday, September 23<br>
+        🕕 10:00 PM<br>
+        📍 Microsoft Teams Call
+    </div>
 
-        <a class="rsvp" href="mailto:you@example.com">
-            RSVP
-        </a>
+    <div class="button-container">
+
+        <!-- YES BUTTON -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden"
+                   name="access_key"
+                   value="c39bbe9e-e215-4070-8f36-6de6f10350db">
+
+            <input type="hidden"
+                   name="subject"
+                   value="Glennise said YES! ❤️">
+
+            <input type="hidden"
+                   name="from_name"
+                   value="Date Invitation">
+
+            <input type="hidden"
+                   name="message"
+                   value="Glennise accepted the date invitation! ❤️">
+
+            <button class="rsvp" type="submit">
+                ❤️ Yes, I'd love to
+            </button>
+
+        </form>
+
+
+        <!-- MAYBE BUTTON -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden"
+                   name="access_key"
+                   value="c39bbe9e-e215-4070-8f36-6de6f10350db">
+
+            <input type="hidden"
+                   name="subject"
+                   value="Date invitation response">
+
+            <input type="hidden"
+                   name="from_name"
+                   value="Date Invitation">
+
+            <input type="hidden"
+                   name="message"
+                   value="Glennise chose maybe another time :<">
+
+            <button class="maybe-button" type="submit">
+                Maybe another time
+            </button>
+
+        </form>
 
     </div>
 
-</body>
-</html>
+</div>
+
+</body> </html>
